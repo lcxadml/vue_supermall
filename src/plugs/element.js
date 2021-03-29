@@ -1,0 +1,30 @@
+import {Message,Input,Form,FormItem,Button,Header,Main,Aside,Container,
+    Menu,Submenu,MenuItem,MenuItemGroup,Breadcrumb,BreadcrumbItem,Card,
+    Option,Select,Row,Col,Table,TableColumn,Switch,Tooltip,Pagination,Dialog
+  } from "element-ui"
+  import Vue from 'vue'
+  Vue.use(Form)
+  Vue.use(FormItem)
+  Vue.use(Input)
+  Vue.use(Button)
+  Vue.use(Header)
+  Vue.use(Main)
+  Vue.use(Aside)
+  Vue.use(Container)
+  Vue.use(Menu)
+  Vue.use(Submenu)
+  Vue.use(MenuItem)
+  Vue.use(Breadcrumb)
+  Vue.use(MenuItemGroup)
+  Vue.use(BreadcrumbItem)
+  Vue.use(Option)
+  Vue.use(Select)
+  Vue.use(Row)
+  Vue.use(Col)
+  Vue.use(Card)
+  Vue.use(Table)
+  Vue.use(TableColumn)
+  Vue.use(Switch)
+  Vue.use(Tooltip)
+  Vue.use(Pagination)
+ Vue.use(Dialog)
