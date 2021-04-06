@@ -4,7 +4,7 @@ import router from './router'
 
 import {Message,Input,Form,FormItem,Button,Header,Main,Aside,Container,
   Menu,Submenu,MenuItem,MenuItemGroup,Breadcrumb,BreadcrumbItem,Card,
-  Option,Select,Row,Col,Table,TableColumn,Switch,Tooltip,Pagination,Dialog,MessageBox
+  Option,Select,Row,Col,Table,TableColumn,Switch,Tooltip,Pagination,Dialog,MessageBox,Tag,Tree,
 } from "element-ui"
 import './assets/css/global.css'
 import'element-ui/lib/theme-chalk/index.css';
@@ -47,6 +47,8 @@ Vue.prototype.$http = axios
  Vue.use(Tooltip)
  Vue.use(Pagination)
 Vue.use(Dialog)
+Vue.use(Tag)
+Vue.use(Tree)
  Vue.prototype.$message = Message
  Vue.prototype.$confirm = MessageBox.confirm
 new Vue({
