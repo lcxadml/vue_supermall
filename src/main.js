@@ -4,7 +4,7 @@ import router from './router'
 import TreeTable from 'vue-table-with-tree-grid'
 import {Message,Input,Form,FormItem,Button,Header,Main,Aside,Container,
   Menu,Submenu,MenuItem,MenuItemGroup,Breadcrumb,BreadcrumbItem,Card,
-  Option,Select,Row,Col,Table,TableColumn,Switch,Tooltip,Pagination,Dialog,MessageBox,Tag,Tree,Cascader
+  Option,Select,Row,Col,Table,TableColumn,Switch,Tooltip,Pagination,Dialog,MessageBox,Tag,Tree,Cascader,Alert,TabPane,Tabs
 } from "element-ui"
 import './assets/css/global.css'
 import'element-ui/lib/theme-chalk/index.css';
@@ -49,7 +49,10 @@ Vue.prototype.$http = axios
 Vue.use(Dialog)
 Vue.use(Tag)
 Vue.use(Tree)
+Vue.use(Alert)
 Vue.use(Cascader)
+Vue.use(TabPane)
+Vue.use(Tabs)
  Vue.prototype.$message = Message
  Vue.prototype.$confirm = MessageBox.confirm
  Vue.component('tree-table',TreeTable)
