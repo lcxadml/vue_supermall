@@ -4,7 +4,8 @@ import router from './router'
 import TreeTable from 'vue-table-with-tree-grid'
 import {Message,Input,Form,FormItem,Button,Header,Main,Aside,Container,
   Menu,Submenu,MenuItem,MenuItemGroup,Breadcrumb,BreadcrumbItem,Card,
-  Option,Select,Row,Col,Table,TableColumn,Switch,Tooltip,Pagination,Dialog,MessageBox,Tag,Tree,Cascader,Alert,TabPane,Tabs,Step,Steps,Upload,Checkbox,CheckboxGroup
+  Option,Select,Row,Col,Table,TableColumn,Switch,Tooltip,Pagination,Dialog,MessageBox,Tag,Tree,Cascader,Alert,TabPane,Tabs,Step,Steps,Upload,Checkbox,CheckboxGroup,
+  Timeline,TimelineItem
 } from "element-ui"
 import './assets/css/global.css'
 import'element-ui/lib/theme-chalk/index.css';
@@ -62,8 +63,10 @@ Vue.use(Tabs)
 Vue.use(Step)
 Vue.use(Steps),
 Vue.use(Upload)
-Vue.use(CheckboxGroup)
+Vue.use(CheckboxGroup) 
 Vue.use(Checkbox)
+Vue.use(Timeline)
+Vue.use(TimelineItem)
 Vue.use(VueQuillEditor)
  Vue.prototype.$message = Message
  Vue.prototype.$confirm = MessageBox.confirm

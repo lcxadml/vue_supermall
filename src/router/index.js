@@ -10,6 +10,7 @@ import Cate  from '../components/goods/Cate.vue'
 import Params  from '../components/goods/Params.vue'
 import Add  from '../components/goods/Add.vue'
 import List  from '../components/goods/List.vue'
+import Order from '../components/order/Order.vue'
 Vue.use(Router)
 
 const router = new Router({
@@ -28,9 +29,23 @@ const router = new Router({
      {path:'/Params',component:Params},
      {path:'/goods',component:List},
      {path:'/add',component:Add},
+     {path:'/orders',component:Order},
    ]},
    
   ] 
+})
+Vue.filter('dateFormat', function(originVal) {
+  const dt = new Date(originVal)
+
+  const y = dt.getFullYear()
+  const m = (dt.getMonth() + 1 + '').padStart(2, '0')
+  const d = (dt.getDate() + '').padStart(2, '0')
+
+  const hh = (dt.getHours() + '').padStart(2, '0')
+  const mm = (dt.getMinutes() + '').padStart(2, '0')
+  const ss = (dt.getSeconds() + '').padStart(2, '0')
+
+  return `${y}-${m}-${d} ${hh}:${mm}:${ss}`
 })
 // 挂载路由导航守卫
 router.beforeEach((to,from,next)=>{
