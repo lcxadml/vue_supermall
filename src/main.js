@@ -4,12 +4,18 @@ import router from './router'
 import TreeTable from 'vue-table-with-tree-grid'
 import {Message,Input,Form,FormItem,Button,Header,Main,Aside,Container,
   Menu,Submenu,MenuItem,MenuItemGroup,Breadcrumb,BreadcrumbItem,Card,
-  Option,Select,Row,Col,Table,TableColumn,Switch,Tooltip,Pagination,Dialog,MessageBox,Tag,Tree,Cascader,Alert,TabPane,Tabs
+  Option,Select,Row,Col,Table,TableColumn,Switch,Tooltip,Pagination,Dialog,MessageBox,Tag,Tree,Cascader,Alert,TabPane,Tabs,Step,Steps,Upload,Checkbox,CheckboxGroup
 } from "element-ui"
 import './assets/css/global.css'
 import'element-ui/lib/theme-chalk/index.css';
 import './assets/fonts/iconfont.css'
 import axios from 'axios'
+import VueQuillEditor from 'vue-quill-editor'
+
+// require styles
+import 'quill/dist/quill.core.css'
+import 'quill/dist/quill.snow.css'
+import 'quill/dist/quill.bubble.css'
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
@@ -53,6 +59,12 @@ Vue.use(Alert)
 Vue.use(Cascader)
 Vue.use(TabPane)
 Vue.use(Tabs)
+Vue.use(Step)
+Vue.use(Steps),
+Vue.use(Upload)
+Vue.use(CheckboxGroup)
+Vue.use(Checkbox)
+Vue.use(VueQuillEditor)
  Vue.prototype.$message = Message
  Vue.prototype.$confirm = MessageBox.confirm
  Vue.component('tree-table',TreeTable)

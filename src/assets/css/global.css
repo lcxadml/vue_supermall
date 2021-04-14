@@ -19,3 +19,8 @@ html,body,#app {
 .el-pagination {
     margin-top: 15px;
 }
+.quill-editor {
+    overflow: hidden;
+    height: 300px;
+    margin-top: 15px;
+}
