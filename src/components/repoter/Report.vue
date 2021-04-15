@@ -26,9 +26,6 @@ export default {
                 text: '用户来源'
             },
             tooltip: {},
-            legend: {
-                data:['销量']
-            },
             xAxis: {
                 data: ["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"]
             },
