@@ -10,7 +10,8 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
+    "echarts": "^5.0.2",
     "element-ui": "^2.15.1",
     "lodash": "^4.17.21",
     "vue": "^2.5.2",
